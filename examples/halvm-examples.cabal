@@ -1,0 +1,18 @@
+name:                halvm-examples
+version:             0.1.0.0
+synopsis:            HaLVM examples
+description:         Example unikernels built with the HaLVM
+homepage:            https://galois.com/project/halvm/
+license:             BSD3
+license-file:        LICENSE
+author:              Adam Wick
+maintainer:          awick@galois.com
+build-type:          Simple
+extra-source-files:  ChangeLog.md, README
+cabal-version:       >=1.10
+
+executable hello
+  main-is:             Hello.hs
+  build-depends:       base, HALVMCore
+  hs-source-dirs:      Core/Hello
+  default-language:    Haskell2010
